@@ -29,7 +29,7 @@ export default function Header(){
                             <input className="flex outline-none max-md:hidden" type="text" placeholder=" Search for products" />
                         </div>
 
-                        <div className="flex justify-between gap-3">
+                        <div className="flex justify-between gap-3 cursor-pointer">
                             <span className="material-symbols-outlined">
                                 shopping_cart
                             </span>

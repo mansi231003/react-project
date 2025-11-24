@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./custom.css"
 import Header from "@/componenets/Header";
 import AnnouncementBar from "@/componenets/Announcementbar";
 import Footer from "@/componenets/Footer";
@@ -38,11 +39,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="flex flex-col justify-center items-center">
         <AnnouncementBar/>
         <Header/>
+        {children}
         <Testimonials/>
         <Footer/>
-        {children}
+        </div>
       </body>
     </html>
   );
